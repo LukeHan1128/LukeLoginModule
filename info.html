@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<div w3-include-html="./template/header.html"></div>
+<script type="text/javascript" src="./js/login.js"></script>
+<body>
+	<h1>Info</h1>
+	<form method="post">
+		<input type="hidden" name="idx" value="${ member.idx }" disabled="disabled">
+		
+		<label>
+			<span>ID</span>
+			<input type="text" name="mid" value="${ member.mid }" disabled="disabled">
+		</label>
+		<br/>
+		
+		<label>
+			<span>Password</span>
+			<input type="text" name="mpw">
+		</label>
+		<br/>
+		
+		<label>
+			<span>Name</span>
+			<input type="text" name="mname" value="${ member.mname }">
+		</label>
+		<br/>
+		
+		<label>
+			<span>Phone</span>
+			<input type="text" name="mphone" value="${ member.mphone }">
+		</label>
+		<br/>
+		
+		<label>
+			<span>Email</span>
+			<input type="text" name="memail" value="${ member.memail }">
+		</label>
+		<br/>
+		
+		<label>
+			<span>Kind</span>
+			<input type="text" name="mkind" value="${ member.mkind }" disabled="disabled">
+		</label>
+		<br/>
+		
+		<label>
+			<span>Join Data</span>
+			<input type="text" name="create_date" value="${ member.create_date }" disabled="disabled">
+		</label>
+		<br/>
+		
+		<label>
+			<span>Update</span>
+			<input type="text" name="update_date" value="${ member.update_date }" disabled="disabled">
+		</label>
+		
+	</form>
+	<input type="button" value="main" onclick="location.href='./main.html'">
+	<input type="button" value="update" onclick="location.href='./update.html'">
+</body>
+</html>

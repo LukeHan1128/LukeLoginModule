@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<div w3-include-html="./template/header.html"></div>
+<script type="text/javascript" src="./js/signup.js"></script>
+<body>
+	<h1>Sign up</h1>
+	<form id="signform" method="post">
+		<label>
+			<span>ID</span>
+			<input type="text" name="mid" placeholder="ID" autocomplete="false" required maxlength="30">
+			<input type="button" id="id_ck" value="check" />
+		</label>
+		<p id="sign_msg_id"></p>
+
+		<label>
+			<span>Password</span>
+			<input type="password" name="mpw" placeholder="PASSWORD" maxlength="30">
+		</label>
+		<br/>
+		<label>
+			<span>RePassword</span>
+			<input type="password" name="mpwre" placeholder="REPASSWORD" maxlength="30">
+		</label>
+		<p id="sign_msg_pw"></p>
+
+		<label>
+			<span>Name</span>
+			<input type="text" name="mname" placeholder="Name" autocomplete="false" required maxlength="20">
+		</label>
+		<p id="sign_msg_name"></p>
+
+		<label>
+			<span>Phone</span>
+			<select name="phone1">
+				<option value="010">010</option>
+				<option value="011">011</option>
+				<option value="016">016</option>
+				<option value="017">017</option>
+				<option value="018">018</option>
+				<option value="019">019</option>
+			</select>
+			<input type="text" name="phone2" placeholder="Phone" autocomplete="false" required maxlength="4">
+			<input type="text" name="phone3" placeholder="Phone" autocomplete="false" required maxlength="4">
+			<input type="hidden" name="mphone">
+		</label>
+		<p id="sign_msg_phone"></p>
+
+		<label>
+			<span>Mail</span>
+			<input type="text" name="memail" placeholder="Email" autocomplete="false" required>
+		</label>
+		<p id="sign_msg_email"></p>
+
+		<input type="button" value="Sign up" id="signup_btn">
+		<input type="button" value="Cancel" onclick="location.href='login'">
+	</form>
+</body>
+</html>
